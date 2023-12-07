@@ -1,0 +1,14 @@
+@use 'base/variables' as v;
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.5;
+}
+
+[class$="heading"] {
+    margin: 2rem 0;
+}
+
+a {
+    text-decoration: none;
+}

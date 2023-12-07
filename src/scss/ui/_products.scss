@@ -1,0 +1,87 @@
+@use 'base/mixins' as m;
+@use 'base/variables' as v;
+
+.grid {
+    background-color: v.$clr-white;
+    margin: 1rem;
+    margin-left: 0;
+    border-radius: 2rem;
+    padding: 3rem;
+
+    @include m.telefono {
+        margin: 1rem;
+        margin-top: .5rem;
+        padding: 2rem;
+    }
+
+    &__header {
+        color: v.$clr-main;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+
+    &__products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.2rem;
+
+        @include m.desktop {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include m.tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include m.telefono {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+.product {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 1.5rem;
+    border: 1px solid v.$border;
+    overflow: hidden;
+
+    &__img {
+        max-width: 100%;
+        border-radius: 1rem;
+    }
+
+    &__details {
+        background-color: v.$clr-main;
+        color: v.$clr-white;
+        padding: .5rem 1rem;
+        /* border-radius: 0 0 1rem 1rem; */
+        margin-top: -2rem;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+    }
+
+    &__header {
+        font-size: 1.5rem;
+    }
+
+    &__add {
+        border: 2px solid v.$clr-white;
+        background-color: v.$clr-white;
+        color: v.$clr-main;
+        padding: .4rem;
+        text-transform: uppercase;
+        border-radius: 100vmax;
+        cursor: pointer;
+        transition: all 200ms;
+
+        &:hover {
+            background-color: v.$clr-main;
+            color: v.$clr-white;
+        }
+    }
+
+    
+}
