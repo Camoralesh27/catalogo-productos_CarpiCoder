@@ -20,6 +20,10 @@ body {
     color: v.$black;
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
+    ::selection{ /* change color of selected text */
+        background-color: rgb(194, 189, 53);
+        color: rgb(58, 58, 58);
+    }
 }
 
 

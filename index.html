@@ -9,6 +9,7 @@
 
     <!-- title -->
     <title>Demoli-Shop</title>
+    <link rel="shortcut icon" href="./src/img/demolicion.png" type="image/x-icon">
 
     <!-- icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -38,7 +39,7 @@
             </button>
 
             <header class="aside__header">
-                <a class="aside__link-logo" href="./index.html"><h1 class="aside__logo">Demoli-Shop</h1></a>
+                <a class="aside__link-logo" href="./index.html"><h1 class="aside__logo">DemoShop</h1></a>
             </header>
 
             <nav class="nav">
@@ -59,6 +60,7 @@
                     <li>
                         <a class="nav__menu nav__cart" href="./contacto.html"><i class="bi bi-telephone-fill"></i>Contacto</a>
                     </li>
+
                     <!-- <li>
                         <a class="nav__menu nav__cart" href="./carrito.html"><i class="bi bi-cart-fill"></i>Carrito <span class="numero">0</span></a>
                     </li> -->
@@ -70,18 +72,23 @@
             </footer>
         </aside>
         
-        
         <main class="grid">
+            <p class="grid__warning">*Todos los articulos son producto de demoliciones y de segunda mano por lo que no nos hacemos responsables de piezas faltantes, producto ó piezas dañadas, mal funcionamiento ó funcionamiento nulo, ni de cualquier otro problema que pueda surgir a causa de su posesión ó uso.</p>
+
             <h2 id="grid__header" class="grid__header">Todos los productos</h2>
             
             <div class="grid__products" id="grid__products">
+                
                 <!-- JS fills this  -->
                 <!-- <div class="product">
-                    <img class="product__img" src="../src/img/abrigos/01.jpg" alt="abrigo" >
+                    <img class="product__img" src="../src/img/abrigos/01.jpg" alt="abrigo" loading="lazy">
                     <div class="product__details">
                         <h3 class="product__header">Abrigo 01</h3>
-                        <p class="product__price">$1,000</p>
-                        <button class="product__add">Agregar</button>
+                        <p class="product__price"><span class="product__bold">Precio:</span> $1,000</p>
+                        <p class="product__description">
+                            <span class="product__bold">Informacion:</span><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non autem excepturi ut, quos laboriosam. Non autem excepturi ut, quos laboriosam.Non autem excepturi ut, quos laboriosam 
+                        </p>
+                        <button class="product__add">Me interesa</button>
                     </div>
                 </div> -->
 

@@ -9,7 +9,8 @@ const productos = [
             nombre: "Abrigos",
             id: "abrigos"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "abrigo-02",
@@ -19,7 +20,8 @@ const productos = [
             nombre: "Abrigos",
             id: "abrigos"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "abrigo-03",
@@ -29,7 +31,8 @@ const productos = [
             nombre: "Abrigos",
             id: "abrigos"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "abrigo-04",
@@ -39,7 +42,8 @@ const productos = [
             nombre: "Abrigos",
             id: "abrigos"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "abrigo-05",
@@ -49,7 +53,8 @@ const productos = [
             nombre: "Abrigos",
             id: "abrigos"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     // Camisetas
     {
@@ -60,7 +65,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-02",
@@ -70,7 +76,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-03",
@@ -80,7 +87,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-04",
@@ -90,7 +98,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-05",
@@ -100,7 +109,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-06",
@@ -110,7 +120,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-07",
@@ -120,7 +131,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "camiseta-08",
@@ -130,7 +142,8 @@ const productos = [
             nombre: "Camisetas",
             id: "camisetas"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     // Pantalones
     {
@@ -141,7 +154,8 @@ const productos = [
             nombre: "Pantalones",
             id: "pantalones"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "pantalon-02",
@@ -151,7 +165,8 @@ const productos = [
             nombre: "Pantalones",
             id: "pantalones"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "pantalon-03",
@@ -161,7 +176,8 @@ const productos = [
             nombre: "Pantalones",
             id: "pantalones"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "pantalon-04",
@@ -171,7 +187,8 @@ const productos = [
             nombre: "Pantalones",
             id: "pantalones"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     },
     {
         id: "pantalon-05",
@@ -181,7 +198,8 @@ const productos = [
             nombre: "Pantalones",
             id: "pantalones"
         },
-        precio: 1000
+        precio: 1000,
+        descripcion: "No hay datos."
     }
 ];
 
@@ -197,11 +215,13 @@ function cargarProductos(productosElegidos){
         const div = document.createElement("div");
         div.classList.add("product");
         div.innerHTML = `
-                <img class="product__img" src="${producto.imagen}" alt="${producto.titulo}" >
+                <img class="product__img" src="${producto.imagen}" alt="${producto.titulo}" loading="lazy">
                 <div class="product__details">
                     <h3 class="product__header">${producto.titulo}</h3>
-                    <p class="product__price">$ ${producto.precio}</p>
-                    <button class="product__add" id="${producto.id}">Agregar</button>
+                    <p class="product__price"><span class="product__bold">Precio:</span> $${producto.precio}</p>
+                    <p class="product__description">
+                            <span class="product__bold">Informacion:</span> ${producto.descripcion}
+                    </p>
                 </div>
         `;
 
@@ -231,3 +251,17 @@ botonesCategorias.forEach(boton => {
         }
     })
 });
+
+/*
+<div class="product">
+                    <img class="product__img" src="../src/img/abrigos/01.jpg" alt="abrigo" loading="lazy">
+                    <div class="product__details">
+                        <h3 class="product__header">Abrigo 01</h3>
+                        <p class="product__price"><span class="product__bold">Precio:</span> $1,000</p>
+                        <p class="product__description">
+                            <span class="product__bold">Informacion:</span><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Non autem excepturi ut, quos laboriosam. Non autem excepturi ut, quos laboriosam.Non autem excepturi ut, quos laboriosam 
+                        </p>
+                        <!-- <button class="product__add">Me interesa</button> -->
+                    </div>
+                </div>
+ */
