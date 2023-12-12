@@ -77,19 +77,20 @@
     }
 
     &__bold {
-        font-weight: 600;
-        font-size: 1.5rem;
+        font-weight: 500;
+        font-size: 1.4rem;
         color: v.$clr-highlight
     }
 
     &__description {
-        font-size: 1.2rem;
         height: max-content; /* 8rem con boton */
         /* overflow-y: scroll; */
     }
 
     &__description,
-    &__price {
+    &__price,
+    &__available {
+        font-size: 1.2rem;
         padding: 0 .5rem;
     }
 

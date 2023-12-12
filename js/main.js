@@ -10,7 +10,8 @@ const productos = [
             id: "abrigos"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "abrigo-02",
@@ -21,7 +22,8 @@ const productos = [
             id: "abrigos"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "abrigo-03",
@@ -32,7 +34,8 @@ const productos = [
             id: "abrigos"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "abrigo-04",
@@ -43,7 +46,8 @@ const productos = [
             id: "abrigos"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "abrigo-05",
@@ -54,7 +58,8 @@ const productos = [
             id: "abrigos"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     // Camisetas
     {
@@ -66,7 +71,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-02",
@@ -77,7 +83,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-03",
@@ -88,7 +95,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-04",
@@ -99,7 +107,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-05",
@@ -110,7 +119,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-06",
@@ -121,7 +131,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-07",
@@ -132,7 +143,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "camiseta-08",
@@ -143,7 +155,8 @@ const productos = [
             id: "camisetas"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     // Pantalones
     {
@@ -155,7 +168,8 @@ const productos = [
             id: "pantalones"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "pantalon-02",
@@ -166,7 +180,8 @@ const productos = [
             id: "pantalones"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "pantalon-03",
@@ -177,7 +192,8 @@ const productos = [
             id: "pantalones"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "pantalon-04",
@@ -188,7 +204,8 @@ const productos = [
             id: "pantalones"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     },
     {
         id: "pantalon-05",
@@ -199,7 +216,8 @@ const productos = [
             id: "pantalones"
         },
         precio: 1000,
-        descripcion: "No hay datos."
+        descripcion: "No hay datos.",
+        disponible: 1 
     }
 ];
 
@@ -219,6 +237,7 @@ function cargarProductos(productosElegidos){
                 <div class="product__details">
                     <h3 class="product__header">${producto.titulo}</h3>
                     <p class="product__price"><span class="product__bold">Precio:</span> $${producto.precio}</p>
+                    <p class="product__available"><span class="product__bold">Disponible:</span> ${producto.disponible}</p>
                     <p class="product__description">
                             <span class="product__bold">Informacion:</span> ${producto.descripcion}
                     </p>
