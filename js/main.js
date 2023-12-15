@@ -1,7 +1,7 @@
 // PRODUCTOS
 const productos = [
     // Abrigos
-    {
+    /* {
         id: "abrigo-01",
         titulo: "Abrigo 01",
         imagen: "../src/img/abrigos/01.jpg",
@@ -60,9 +60,9 @@ const productos = [
         precio: 1000,
         descripcion: "No hay datos.",
         disponible: 1 
-    },
+    }, */
     // Camisetas
-    {
+    /* {
         id: "camiseta-01",
         titulo: "Camiseta 01",
         imagen: "../src/img/camisetas/01.jpg",
@@ -157,9 +157,9 @@ const productos = [
         precio: 1000,
         descripcion: "No hay datos.",
         disponible: 1 
-    },
+    }, */
     // Pantalones
-    {
+    /* {
         id: "pantalon-01",
         titulo: "Pantalón 01",
         imagen: "../src/img/pantalones/01.jpg",
@@ -218,7 +218,168 @@ const productos = [
         precio: 1000,
         descripcion: "No hay datos.",
         disponible: 1 
+    }, */
+
+    /* Autopartes */
+    {
+        id: "autopartes-01",
+        titulo: "Rin y llanta Tornado",
+        imagen: "build/img/autopartes/auto1.jpg",
+        categoria: {
+            nombre: "Autopartes",
+            id: "autopartes"
+        },
+        precio: 3500,
+        descripcion: "Rin original usado chevrolet tornado 2019 195/55R16 87V.",
+        disponible: 1 
+    },
+    {
+        id: "autopartes-02",
+        titulo: "Rin y llanta",
+        imagen: "build/img/autopartes/auto2.jpg",
+        categoria: {
+            nombre: "Autopartes",
+            id: "autopartes"
+        },
+        precio: 850,
+        descripcion: "Rin para llanta P175/65R14 81T.",
+        disponible: 1 
+    },
+    {
+        id: "autopartes-03",
+        titulo: "Modulo Camioneta RAM ",
+        imagen: "build/img/autopartes/auto3.jpg",
+        categoria: {
+            nombre: "Autopartes",
+            id: "autopartes"
+        },
+        precio: 6500,
+        descripcion: "Modulo Tipm de camioneta RAM 002AC 2x4 MODELO 2008. ",
+        disponible: 1 
+    },
+    /* Domesticos */
+    {
+        id: "domesticos-01",
+        titulo: "Horno electrico",
+        imagen: "build/img/domesticos/dom1.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 500,
+        descripcion: "Horno electrico Black + Decker funcionando. ",
+        disponible: 1 
+    },
+    {
+        id: "domesticos-02",
+        titulo: "Lavadero",
+        imagen: "build/img/domesticos/dom2.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 450,
+        descripcion: "No hay información extra. ",
+        disponible: 1 
+    },
+    {
+        id: "domesticos-03",
+        titulo: "Mesa",
+        imagen: "build/img/domesticos/dom3.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 400,
+        descripcion: "75cm X 75cm. ",
+        disponible: 1 
+    },
+    {
+        id: "domesticos-04",
+        titulo: "Horno microondas",
+        imagen: "build/img/domesticos/dom4.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 100,
+        descripcion: "Prende y apaga pero los botones no funcionan bien. ",
+        disponible: 1 
+    },
+    {
+        id: "domesticos-05",
+        titulo: "Dispensador de papel higienico",
+        imagen: "build/img/domesticos/dom5.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 200,
+        descripcion: "En buen estado, solo daños esteticos y raspones. 27cm diametro, 12cm ancho",
+        disponible: 1 
+    },
+    {
+        id: "domesticos-06",
+        titulo: "Pedestal de lavabo",
+        imagen: "build/img/domesticos/dom6.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 200,
+        descripcion: "66cm de alto, en buen estado, solo manchado.",
+        disponible: 1 
+    },
+    {
+        id: "domesticos-07",
+        titulo: "Piano electrico Yamaha",
+        imagen: "build/img/domesticos/dom7.jpg",
+        categoria: {
+            nombre: "Domesticos",
+            id: "domesticos"
+        },
+        precio: 4500,
+        descripcion: "Piano 74 teclas, incluye pedal sustain y bipie. Detalles al tocar una que otra tecla y suena fuerte, y una no suena. Tema de matenimiento electronico.",
+        disponible: 1 
+    },
+    /* Puertas y rejas */
+    {
+        id: "puertas-01",
+        titulo: "Puerta",
+        imagen: "build/img/puertas/puerta1.jpg",
+        categoria: {
+            nombre: "Puertas",
+            id: "puertas"
+        },
+        precio: 250,
+        descripcion: "117.5cm X 80.5cm",
+        disponible: 1 
+    },
+    {
+        id: "puertas-02",
+        titulo: "Puerta blanca",
+        imagen: "build/img/puertas/puerta2.jpg",
+        categoria: {
+            nombre: "Puertas",
+            id: "puertas"
+        },
+        precio: 250,
+        descripcion: "229.5cm X 55cm",
+        disponible: 1 
+    },
+    {
+        id: "puertas-03",
+        titulo: "Puerta blanca",
+        imagen: "build/img/puertas/puerta3.jpg",
+        categoria: {
+            nombre: "Puertas",
+            id: "puertas"
+        },
+        precio: 250,
+        descripcion: "230cm X 62cm",
+        disponible: 1 
     }
+
 ];
 
 const contenedorProductos = document.querySelector("#grid__products");
@@ -233,7 +394,9 @@ function cargarProductos(productosElegidos){
         const div = document.createElement("div");
         div.classList.add("product");
         div.innerHTML = `
-                <img class="product__img" src="${producto.imagen}" alt="${producto.titulo}" loading="lazy">
+                <div class="product__container-img">
+                    <img class="product__img" src="${producto.imagen}" alt="${producto.titulo}" loading="lazy">
+                </div>
                 <div class="product__details">
                     <h3 class="product__header">${producto.titulo}</h3>
                     <p class="product__price"><span class="product__bold">Precio:</span> $${producto.precio}</p>
