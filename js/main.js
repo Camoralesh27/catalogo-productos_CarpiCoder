@@ -395,7 +395,9 @@ function cargarProductos(productosElegidos){
         div.classList.add("product");
         div.innerHTML = `
                 <div class="product__container-img">
-                    <img class="product__img" src="${producto.imagen}" alt="${producto.titulo}" loading="lazy">
+                    <a href="${producto.imagen}" target="_blank">
+                        <img class="product__img" src="${producto.imagen}" alt="${producto.titulo}" loading="lazy">
+                    </a>
                 </div>
                 <div class="product__details">
                     <h3 class="product__header">${producto.titulo}</h3>
